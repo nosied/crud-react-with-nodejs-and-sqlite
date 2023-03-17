@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #242424;
+  --tertiary-color: #ffffff;
+  --primary-text: #ffffff;
+  --secondary-text: #242424;
+}
+.App {
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.lateralMenu {
+  background-color: #f8f9fb;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 106px);
+  .accordion {
+    padding: 0;
+    border: 0 !important;
+    .accordion-item {
+      background-color: #f8f9fb;
+      border: 0;
+      border-radius: 0;
+    }
+    .accordion-header {
+      max-height: 40px;
+      border-radius: 0;
+    }
+    .accordion-button {
+      border-radius: 0;
+      background-color: var(--primary-color);
+      font-weight: 500;
+      color: #ffffff;
+      width: 100%;
+      padding: 0;
+      padding-left: 15px;
+      height: 40px;
+      border-radius: 0;
+      ::after {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .link {
+    margin-bottom: 10px;
+    max-height: 40px;
+    line-height: 40px;
+    a {
+      color: #000000;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+}
+.no-registers {
+  width: 100%;
+  text-align: center;
+  background-color: #0d6efd57;
+  border-radius: 5px;
+  color: #524444;
+  font-style: italic;
+  padding: 20px;
+}
+.navigation {
+  margin: 20px 0;
+  .alignToRight {
+    text-align: right;
+  }
+}
+.listTable {
+  display: flex;
+  flex-direction: column;
+}
+.toRight {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.toCenter {
+  display: center;
+  flex-direction: row-reverse;
+}
+.loading {
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #ffffff;
+  opacity: 0.8;
+  z-index: 1000;
+}
+.actionTable {
+  button {
+    margin-left: 10px;
+  }
+}
+.customToast {
+  width: 100%;
+  left: 0;
+  top: 20px;
+  position: fixed;
+  .toastSection {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.customMenu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .leftItems {
+    display: flex;
+  }
+}
+
+.footer {
+  background-color: var(--primary-color);
+  height: 300px;
+  padding-top: 30px;
+  .container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 0.5em;
+    grid-column-gap: 1em;
+  }
+  a {
+    color: #ffffff;
+  }
+}
